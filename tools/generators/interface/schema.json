@@ -1,0 +1,23 @@
+{
+  "cli": "nx",
+  "id": "interface",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Interface Name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "projectName": {
+      "type": "string",
+      "description": "Project Name",
+      "$default": {
+        "$source": "projectName"
+      }
+    }
+  },
+  "required": ["name", "projectName"]
+}
